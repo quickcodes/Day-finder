@@ -1,0 +1,65 @@
+first of all we define easy name to some basic keywords in c. like we type "p" or "printf" , "s" or "scanf" , "and" or "||" etc.. both work same.
+
+
+After that in main function we create variable to take inputs and then we call a function called "welcomeScreen()" 
+
+welcomeScreen() -> in this function firstly we change the color of the screen by using system function.With this function we can use all the commands which are available in our cmd(command prompt).There are a lot of color option in this fuctions. 
+Example -
+0 = Black   8 = Gray
+1 = Blue    9 = Light Blue
+2 = Green   A = Light Green
+3 = Aqua    B = Light Aqua
+4 = Red     C = Light Red
+5 = Purple  D = Light Purple
+6 = Yellow  E = Light Yellow
+7 = White   F = Bright White
+and after that start a do while loop and in it we clear the screen using system("cls") function and then changing color. After that we print some basic stuffs.
+Now we want to make equation like this -
+------------------------------------------------------------
+Given date - 16/08/1856
+      (dd/mm/yyyy) 
+(last two digit of year)=yy
+
+month code chart -
+1 = jan		0 = july
+4 = feb		3 = august
+4 = march	6 = september
+0 = april	1 = october
+2 = may		4 = november
+5 = june	6 = december
+if you want to learn this code 
+then see this (144) (025) (146) month codes
+	       12^2  5^2
+
+Equation -> [dd + yy + (yy)/4 + month code] % 7 
+
+------------------------------------------------------------
+we take input from user and then for future operations we need to last two digits of year 
+Ex - 
+1893 = 93
+1927 = 27
+so to get last 2 digit of number we use %100 and store it in another variable. then we make a variable a storing month code by using the function monthCodeFinder(mm) and passing "mm" variable in it. in month code function we simply just use switch case nothing else. and to make code looking simple to store (yy/4) into another variable. After that we store the calculation in a new variable. 
+Here , we are almost done to get the name of the day we want code of that that to do this we make a new variable and then store day code in it by using our daycode(cal,yyyy) function and passing our calculation and year 
+
+daycode() -> here we make a variable to return a value. After that using if else we cheque our year is come's where and after that according to to time period we add of substract values from our calculation.
+
+Century code chart ->
+1600 <= 1699 +5
+1700 <= 1799 +3
+1800 <= 1899 +1
+1800 <= 1999  0
+2000 <= 2099 -1
+2100 <= 2199 -3
+2200 <= 2299 -5
+
+Now come back to our main() code we perfectly stored dcode. And here we done. just using a function we cheque a daycode of the day and display it thats it. and after that we use system("cls") function to clear the screen  and because we are in do while loop we ask to user if he/she want to play more and accourding to his/her choise our while condition execute the loop. 
+
+daycode ->
+0 = saturday 
+1 = sunday 
+2 = monday 
+3 = tuesday 
+4 = wednesday
+5 = thursday 
+6 = friday 
+
