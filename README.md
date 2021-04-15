@@ -1,6 +1,5 @@
 # Day-finder
 Find the day of any date.
-use .exe file to run app
 
 In this little project i'm code to find a day between 1600 to 2300 
 but in same way you can expand it more
